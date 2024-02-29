@@ -24,7 +24,7 @@
     "vite": "^5.1.4"
   },
   "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
-  "main": "src/index.js",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aditya7483thakur/segmentor.git"

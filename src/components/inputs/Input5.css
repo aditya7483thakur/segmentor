@@ -1,0 +1,28 @@
+/* From uiverse.io by @alexruix */
+.input5 {
+  line-height: 28px;
+  border: 2px solid transparent;
+  border-bottom-color: #777;
+  padding: 0.2rem 0;
+  outline: none;
+  background-color: transparent;
+  color: #0d0c22;
+  transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.input5:focus,
+input5:hover {
+  outline: none;
+  padding: 0.2rem 1rem;
+  border-radius: 1rem;
+  border-color: #7a9cc6;
+}
+
+.input5::placeholder {
+  color: #777;
+}
+
+.input5:focus::placeholder {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
