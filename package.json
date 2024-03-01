@@ -1,8 +1,26 @@
 {
   "name": "segmentor",
-  "private": true,
+  "private": false,
   "version": "1.0.0",
   "type": "module",
+  "main": "dist/assets/index.umd.js",
+  "module": "dist/assets/index.es.js",
+  "types": "dist/assets/index.d.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js",
+      "types": "./dist/index.d.js",
+      "styles": "./dist/style.css"
+    }
+  },
+  "files": [
+    "/dist/index.es.js",
+    "/dist/style.css"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -21,10 +39,11 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
-    "vite": "^5.1.4"
+    "vite": "^5.1.4",
+    "vite-plugin-dts": "^3.7.3",
+    "vite-plugin-lib-inject-css": "^2.0.0"
   },
-  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
-  "main": "index.js",
+  "description": "This package provides multiple animated and modern designed UI components.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aditya7483thakur/segmentor.git"
