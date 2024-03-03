@@ -2,7 +2,10 @@ import React, { forwardRef } from "react";
 import "./Input2.css";
 
 const Input2 = forwardRef(
-  ({ placeholder, value, onChange, className, ...rest }, ref) => {
+  (
+    { placeholder = "Enter text...", value, onChange, className, ...rest },
+    ref
+  ) => {
     return (
       <input
         placeholder={placeholder}

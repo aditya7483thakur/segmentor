@@ -2,7 +2,10 @@ import React, { forwardRef } from "react";
 import "./Input1.css";
 
 const Input1 = forwardRef(
-  ({ placeholder, value, onChange, className, ...rest }, ref) => {
+  (
+    { placeholder = "Enter text...", value, onChange, className, ...rest },
+    ref
+  ) => {
     return (
       <div className={`form-control1 ${className}`}>
         <input
