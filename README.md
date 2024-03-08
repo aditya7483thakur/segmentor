@@ -2,4 +2,4 @@ Welcome to Segmentor, a comprehensive collection of UI components designed to st
 
 Visit the website to know how to use segmentor - https://segmentor.vercel.app
 
-Have questions, feedback, or suggestions? We'd love to hear from you! Get in touch with us via email at adityakumarji7483@email.com or through our GitHub repository : github.com/aditya7483thakur/segmentor. Thank you for choosing Segmentor! We're excited to be a part of your development journey.
+Have questions, feedback, or suggestions? We'd love to hear from you! Get in touch with us via email at adityakumarji7483@email.com or through our GitHub repository : https://github.com/aditya7483thakur/segmentor. Thank you for choosing Segmentor! We're excited to be a part of your development journey.
