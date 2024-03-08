@@ -5,7 +5,7 @@ import "./Card4.css";
 const Card4 = ({
   imageurlfront,
   imageurlback,
-  altText,
+  altText = "Image..",
   className,
   ...rest
 }) => {

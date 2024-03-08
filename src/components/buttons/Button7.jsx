@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./Button7.css";
 
-const Button7 = ({ onClick, children, className, ...rest }) => {
+const Button7 = ({ onClick, children = "Button", className, ...rest }) => {
   return (
     <button
       className={`button-7 ${className}`}
@@ -16,12 +16,7 @@ const Button7 = ({ onClick, children, className, ...rest }) => {
 };
 
 Button7.propTypes = {
-  children: PropTypes.node.isRequired,
   className: PropTypes.string,
-};
-
-Button7.defaultProps = {
-  children: "Button",
 };
 
 export { Button7 };

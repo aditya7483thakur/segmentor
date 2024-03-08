@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./Button1.css";
 
-const Button1 = ({ onClick, children, className, ...rest }) => {
+const Button1 = ({ onClick, children = "Button", className, ...rest }) => {
   return (
     <button
       className={`button1-pushable ${className}`}
@@ -18,12 +18,7 @@ const Button1 = ({ onClick, children, className, ...rest }) => {
 };
 
 Button1.propTypes = {
-  children: PropTypes.node.isRequired,
   className: PropTypes.string,
-};
-
-Button1.defaultProps = {
-  children: "Button",
 };
 
 export { Button1 };

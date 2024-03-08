@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./Card1.css";
 
-const Card1 = ({ imageurl, altText, className, ...rest }) => {
+const Card1 = ({ imageurl, altText = "Image..", className, ...rest }) => {
   return (
     <div className={`card1 ${className}`} {...rest}>
       <img src={imageurl} alt={altText} />

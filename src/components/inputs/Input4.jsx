@@ -3,9 +3,22 @@ import "./Input4.css";
 
 const Input4 = forwardRef(
   (
-    { placeholder = "Enter text...", value, onChange, className, ...rest },
+    {
+      placeholder = "Enter text...",
+      value,
+      onChange,
+      textColour = "black",
+      backgroundColour = "white",
+      className,
+      ...rest
+    },
     ref
   ) => {
+    const inputStyle = {
+      color: textColour,
+      backgroundColor: backgroundColour,
+    };
+
     return (
       <input
         name="text"
@@ -14,6 +27,7 @@ const Input4 = forwardRef(
         onChange={onChange}
         value={value}
         type="text"
+        style={inputStyle}
         {...rest}
         className={`input4 ${className}`}
       ></input>
